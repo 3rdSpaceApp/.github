@@ -1,4 +1,3 @@
-
 # 3rd Space – Where Real Connection Lives
 
 3rd Space is a modern, intentional dating app that encourages meaningful relationships through limited matches, real-life experiences, and emotional clarity. Designed for people who are tired of swipe culture and ready for something real.
@@ -33,9 +32,27 @@
 ```
 3rd-space-app/
 ├── frontend/          # Mobile app
-├── backend/           # DB schemas, auth, edge functions
-├── design/            # Figma exports, logos, color palette
-├── docs/              # Product docs, pitch deck, roadmap
+│   ├── src/          
+│   │   ├── components/
+│   │   ├── screens/
+│   │   ├── assets/
+│   │   ├── navigation/
+│   │   └── utils/
+│   ├── App.tsx
+│   └── package.json
+├── backend/           
+│   ├── database/
+│   │   └── schema.sql
+│   ├── functions/
+│   └── README.md
+├── design/            
+│   ├── logos/
+│   ├── color-palette/
+│   └── hi-fi-mockups/
+├── docs/              
+│   ├── pitch-deck.pdf
+│   ├── product-brief.md
+│   └── roadmap.md
 ```
 
 ---
@@ -96,3 +113,4 @@ DM us on Twitter or email: hello@3rdspace.app (Coming soon)
 ## 🪪 License
 
 MIT License – free to build, fork, and remix with attribution
+

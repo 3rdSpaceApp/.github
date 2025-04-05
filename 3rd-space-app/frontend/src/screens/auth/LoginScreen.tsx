@@ -1,7 +1,7 @@
-// src/screens/auth/LoginScreen.tsx
+
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
-import { supabase } from '../../lib/supabase'; // make sure this path matches your setup
+import { supabase } from '3rd-space-app/supabase'; // make sure this path matches your setup
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { AuthStackParamList } from '../../navigation/AuthNavigator'; // you’ll define this

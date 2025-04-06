@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
-import { supabase } from '../utils/supabaseClient';
+import { supabase } from '../utils/supabaseClient.js';
 import React from 'react';
 
 export default function UserTest() {

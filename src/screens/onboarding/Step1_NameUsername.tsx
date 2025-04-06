@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { useOnboarding } from '../../context/OnboardingContext';
+import { useOnboarding } from '../../context/OnboardingContext.tsx';
 
 
 type OnboardingStackParamList = {
@@ -23,15 +23,20 @@ const Step1_NameUsername = () => {
       navigation.navigate('Step2_AvatarUpload');
     }
   };
+  useEffect(() => {
+    console.log('✅ Step1_NameUsername mounted');
+  }, []); 
 
   console.log('Rendering Step1_NameUsername');
   return (
+    
     <KeyboardAvoidingView
     style={{ flex: 1 }}
     behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         >
     <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.container}> <Text>TEST RENDER</Text>
+        
         <Text style={styles.stepText}>Step 1 of 5</Text>
         <Text style={styles.title}>What's your name?</Text>
         <TextInput

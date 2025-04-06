@@ -3,7 +3,6 @@ import React, { createContext, useState, useContext, ReactNode } from 'react';
 type OnboardingData = {
   firstName: string;
   lastName: string;
-  // Add more fields as needed for avatar, prompts, etc.
 };
 
 type OnboardingContextType = {

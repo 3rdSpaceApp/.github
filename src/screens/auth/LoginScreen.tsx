@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
-import { supabase } from '../../utils/supabaseClient';
+import { supabase } from '../../utils/supabaseClient.ts';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack' with { "resolution-mode": "import" };
-import type { AuthStackParamList } from '../../navigation/AuthNavigator'; // you’ll define this
+import type { AuthStackParamList } from '../../navigation/AuthNavigator.tsx'; // you’ll define this
 
 const LoginScreen = () => {
   const navigation = useNavigation<NativeStackNavigationProp<AuthStackParamList>>();

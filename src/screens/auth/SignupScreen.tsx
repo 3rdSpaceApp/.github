@@ -1,7 +1,7 @@
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { supabase } from '../../utils/supabaseClient';
+import { supabase } from '../../utils/supabaseClient.ts';
 
 export default function SignupScreen (){
     const navigation = useNavigation();
